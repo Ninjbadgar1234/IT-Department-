@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src='inputEmoji.js'></script>
+	<script>
+		$(function () {
+			$('textarea').emoji({
+                place: 'after'
+            });
+		})
+	</script>
+    <title>Emoji</title>
+</head>
+<body>
+    
+    <div class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+
+            <button onclick="document.getElementById('getPhoto').click()">Photo</button>
+            <input type='file' id="getPhoto"  style="display: none;" onchange="readURL(this);" />
+    <img id="blah" src="#"  alt="your image" />
+
+
+          <div class="field">
+            <h1 class="title is-4 has-text-centered">Нийтлэл</h1>
+            <form action="#">
+              <div class="field">
+                <textarea name="post" id="p" class="writePost py-3 px-3" placeholder="Нийтлэл бичнэ үү"></textarea>
+              </div>
+              <div class="field">
+                <label for=""> Хэрвээ та зураг оруулхыг хүсвэл доорх хэсэгт оруулна уу.</label>
+                <!-- <div class="button" style="display:block;width:180px; height:40px;" onclick="document.getElementById('getFile').click()"><i class="far fa-images"></i> Зураг оруулах</div>
+                <input type='file' id="getFile" accept="image/gif, image/jpeg, image/png" style="display:none"> -->
+
+                <div class="button" style="display:block;width:180px; height:40px;" onclick="document.getElementById('inputfile').click()"><i class="far fa-images"></i> Файл оруулах</div>
+                <!-- <input type='file' style="display: none;" id="getFile"> -->
+                
+                <input id='inputfile' type='file' name='inputfile'  onChange='getoutput()'><br>
+                <p id="filePath" ></p>
+              </div>
+
+
+<script>
+    function getFile(filePath) {
+    return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
+}
+
+function getoutput() {
+    document.getElementById('filePath').innerHTML = 'Файлын нэр = ' + getFile(inputfile.value)
+}
+</script>              
+
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-info">Нийтлэх</button>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <script>
+          function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+      </script>
+</body>
+
+</html>

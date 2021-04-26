@@ -1,0 +1,122 @@
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+    360deg,
+    rgb(82, 137, 221) 0%,
+    rgb(206, 236, 241) 100%
+  );
+  border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+    360deg,
+    rgb(206, 236, 241) 0%,
+    rgb(82, 137, 221) 100%
+  ); 
+  }
+  
+body{
+    
+    background-color: rgb(239, 241, 243);
+}
+.img{
+    background: url('../img/pexels-stanislav-kondratiev-2908984.jpg')no-repeat center center/cover;
+    height: 220px;
+}
+.back-white{
+    background-color: #fff;
+    
+}
+.height-nav{
+    height: 80px;
+}
+.proImg{
+    background: url('../img/hands.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+
+}
+.proSize{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.time{
+    font-size: 12px;
+    margin-top: -25px;
+}
+.size-2{
+    font-size: 15px;
+}
+.sticky{
+    position: sticky;
+    top: 0  ;
+}
+.sticky2{
+    position: sticky;
+    top: 90px  ;
+}
+.sticky3{
+    position: sticky;
+    top: 400px  ;
+}
+.hid{
+    overflow: hidden;
+}
+.writePost{
+    width: 100%;
+    height: 70px;
+}
+.imgSize{
+    width: 250px;
+}
+.bl{
+    background: linear-gradient(#f5b1b1, #c5cafc);
+    
+}
+.so {
+    padding: 3px;
+    font-size: 27px;
+    transition: 0.5s;
+    color: rgb(94, 92, 92);
+  }
+  .fa-facebook-square:hover {
+    color: #1877f2;
+  }
+  .fa-instagram-square:hover {
+    color: #c32aa3;
+  }
+  .fa-twitter-square:hover {
+    color: #1da1f2;
+  }
+
+  .ima {
+    background: url("../img/hands.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+  }
+@media screen and (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+}

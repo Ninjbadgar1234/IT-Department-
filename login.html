@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/743c4bf4e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="body has-text-centered">
+            <div class="box my-5 has-text-centered">
+                <figure class="image is-96x96 avatar">
+                    <img src="./img/IT.png">
+                </figure>
+                <div class="tabs is-boxed">
+                    <ul>
+                      <li class="is-active" data-target="login">
+                        <a>
+                          <span>Нэвтрэх</span>
+                        </a>
+                      </li>
+                      <li data-target="register">
+                        <a>
+                         
+                          <span>Бүртгүүлэх</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="px-2" id="tab-content">
+                    <div id="login">
+                      <h3 class="is-size-5 title">Нэвтрэх</h3>
+                      <form >
+                        <div class="field">
+                            <label class="label has-text-left">И-Мэйл</label>
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="examle@gmail.com" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="label has-text-left">Нууц үг</label>
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="нууц үг" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-key"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                        <div class="field ">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="field ">
+                            <a  class="checkbox">
+                                Нууц үгээ мартсан?
+                            </a>
+                        </div>
+                        <button type="submit" class="button is-block is-info is-medium is-fullwidth">Нэвтрэх <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                    </form>
+                    </div>
+                    <div id="register" class="is-hidden">
+                      <h3 class="is-size-5 title">Бүртгүүлэх</h3>
+                      <form >
+                        <div class="field">
+                            
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="text" placeholder="Овог" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user-friends"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                        <div class="field">
+                            
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="text" placeholder="Нэр" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                        <div class="field">
+                            
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="И-Мэйл" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="field">
+                           
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="password" placeholder="Нууц үг" value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-key"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="field">
+                            
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" type="password" placeholder="Нууц үгээ дахин оруулна уу." value="">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-key"></i>
+                              </span>
+                              <span class="icon is-small is-right is-hidden">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </div>
+                          </div>
+                        <button type="submit" class="button is-block is-info is-medium is-fullwidth">Бүртгүүлэх <i class="fas fa-user-plus"></i></button>
+                    </form>
+                    </div>
+                  </div>
+            </div>
+            
+          </section>
+      <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Emoji start -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src='inputEmoji.js'></script>
+    <script>
+      $(function () {
+        $('textarea').emoji({place: 'after'});
+      })
+    </script>
+    <!-- Emoji end -->
+    <script src="https://kit.fontawesome.com/743c4bf4e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/IT.png">
+    <title>Ider University :: IT Department</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="img"></div>
+
+            <nav class="navbar is-transparent mb-5  height-nav sticky">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="img/IT.png" alt="Ider University Logo" style="max-height: 60px" class="px-5">
+                  </a>
+                  <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="nav-links" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a href="index.html" class="navbar-item"> Нүүр </a>
+            
+                      <a class="navbar-item"> Тэнхмийн Тухай </a>
+            
+                      <a class="navbar-item"> Гадаад харилцаа </a>
+                      <!-- <a class="navbar-item"> Клубууд </a> -->
+            
+                      <a href="news.html" class="navbar-item"> Мэдээ </a>
+                      <a class="navbar-item"> Event </a>
+                      <a href="contact.html" class="navbar-item"> Багш, ажилчид </a>
+                    </div>
+                    <div class="navbar-end pr-3" >
+                      <div class="navbar-item">
+                        <div class="buttons">
+                          <a class="button size-2 is-info" id="signup">
+                            <i class="fas fa-user-graduate px-2"></i>
+                            <strong >Профайл</strong>
+                          </a>
+                          <a class="button size-2 is-danger"  id="login"> <i class="fas fa-sign-out-alt pr-2"></i> Гарах </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class=" columns  mx-1 " >
+                <div class="column is-4 ">
+                  <div class="box back-white py-5 px-5 sticky2">
+                        <h1 class="title is-4">Мэдэгдэл</h1>
+                    <div class="item">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comments pr-2"></i> Мессежүүд</p>
+                        <p class="column is-2">(15)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comments pr-2"></i> Нийтлэл</p>
+                        <p class="column is-2">(16)</p>
+                      </a>
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-calendar-alt pr-2"></i> Үйл Явдалууд</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-newspaper pr-2"></i> Мэдээ</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer box my-5 sticky3">
+                    <div class="content has-text-centered">
+                      <p>&copy; 2021  Идэр Их сургуулийн Мэдээллийн технологийн тэнхим</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-8 mr-3 ">
+                      <div class="box body-content back-white py-4 px-4 ">
+                        <div class="card author">
+                          
+                            <section>
+                                <div class="container my-6">
+                                  <article class="media">
+                                    <figure class="media-left">
+                                      <p class="image is-64x64">
+                                        <img src="https://bulma.io/images/placeholders/128x128.png" />
+                                      </p>
+                                    </figure>
+                                    <div class="media-content">
+                                      <div class="content">
+                                        <p>
+                                          <strong>Turtogtokh</strong>
+                                          <br />
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                          porta eros lacus, nec ultricies elit blandit non. Suspendisse
+                                          pellentesque mauris sit amet dolor blandit rutrum. Nunc in
+                                          tempus turpis.
+                                          <br />
+                                          <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+                                        </p>
+                                      </div>
+                          
+                                      <article class="media">
+                                        <figure class="media-left">
+                                          <p class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" />
+                                          </p>
+                                        </figure>
+                                        <div class="media-content">
+                                          <div class="content">
+                                            <p>
+                                              <strong>Urangoo</strong>
+                                              <br />
+                                              Donec sollicitudin urna eget eros malesuada sagittis.
+                                              Pellentesque habitant morbi tristique senectus et netus et
+                                              malesuada fames ac turpis egestas. Aliquam blandit nisl a
+                                              nulla sagittis, a lobortis leo feugiat.
+                                              <br />
+                                              <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                            </p>
+                                          </div>
+                          
+                                          <article class="media">
+                                            Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi
+                                            eu lorem cursus ullamcorper sit amet nec massa.
+                                          </article>
+                          
+                                          <article class="media">
+                                            Morbi vitae diam et purus tincidunt porttitor vel vitae augue.
+                                            Praesent malesuada metus sed pharetra euismod. Cras tellus
+                                            odio, tincidunt iaculis diam non, porta aliquet tortor.
+                                          </article>
+                                        </div>
+                                      </article>
+                          
+                                      <article class="media">
+                                        <figure class="media-left">
+                                          <p class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" />
+                                          </p>
+                                        </figure>
+                                        <div class="media-content">
+                                          <div class="content">
+                                            <p>
+                                              <strong>Tuk </strong>
+                                              <br />
+                                              Sed convallis scelerisque mauris, non pulvinar nunc mattis
+                                              vel. Maecenas varius felis sit amet magna vestibulum euismod
+                                              malesuada cursus libero. Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia Curae;
+                                              Phasellus lacinia non nisl id feugiat.
+                                              <br />
+                                              <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </article>
+                          
+                                  <article class="media">
+                                    <figure class="media-left">
+                                      <p class="image is-64x64">
+                                        <img src="https://bulma.io/images/placeholders/128x128.png" />
+                                      </p>
+                                    </figure>
+                                    <div class="media-content">
+                                      <div class="field">
+                                        <p class="control">
+                                          <textarea
+                                            class="textarea"
+                                            placeholder="Add a comment..."
+                                          ></textarea>
+                                        </p>
+                                      </div>
+                                      <div class="field">
+                                        <p class="control">
+                                          <button class="button is-link">Post comment</button>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </article>
+                                </div>
+                              </section>
+
+                        </div>
+                      </div>
+                </div>  
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

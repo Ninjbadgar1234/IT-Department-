@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Emoji start -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src='inputEmoji.js'></script>
+    <script>
+      $(function () {
+        $('textarea').emoji({place: 'after'});
+      })
+    </script>
+    <!-- Emoji end -->
+    <script src="https://kit.fontawesome.com/743c4bf4e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/IT.png">
+    <title>IT Department :: News</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="img"></div>
+
+            <nav class="navbar is-transparent mb-5  height-nav sticky">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="img/IT.png" alt="Ider University Logo" style="max-height: 60px" class="px-5">
+                  </a>
+                  <div class="navbar-burger" id="burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="nav-links" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a href="index.html" class="navbar-item"> Нүүр </a>
+            
+                      <a href="about.html" class="navbar-item"> Тэнхмийн Тухай </a>
+            
+                      <a class="navbar-item"> Бидний Зураг </a>
+                      <!-- <a class="navbar-item"> Клубууд </a> -->
+            
+                      <a href="news.html" class="navbar-item"> Мэдээ </a>
+                      <a class="navbar-item"> Event </a>
+                      <a href="teachers.html" class="navbar-item"> Багш, ажилчид </a>
+                    </div>
+                    <div class="navbar-end pr-3" >
+                      <div class="navbar-item">
+                        <div class="buttons">
+                          <a href="profile.html" class="button size-2 is-info" id="signup">
+                            <i class="fas fa-user-graduate px-2"></i>
+                            Профайл
+                          </a>
+                          <a class="button size-2 is-danger"  id="login"> <i class="fas fa-sign-out-alt pr-2"></i> Гарах </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class=" columns  mx-1 " >
+                <div class="column is-4 ">
+                  <div class="box back-white py-5 px-5 sticky2">
+                        <h1 class="title is-4">Мэдэгдэл</h1>
+                    <div class="item">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comments pr-2"></i> Мессежүүд</p>
+                        <p class="column is-2">(15)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comments pr-2"></i> Нийтлэл</p>
+                        <p class="column is-2">(16)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-calendar-alt pr-2"></i> Үйл Явдалууд</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-newspaper pr-2"></i> Мэдээ</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer box my-5 sticky3 hide">
+                    <div class="content has-text-centered">
+                      <p>&copy; 2021  Идэр Их сургуулийн Мэдээллийн технологийн тэнхим</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-8 mr-3 ">
+                            <section>
+                                <div class="container">
+                                  <div class="columns is-centered my-0 mb-6 pb-6 is-multiline blue box">
+                                    <div class="column is-10-desktop is-5-tablet">
+                                      <figure class="imag is-4by4 ">
+                                        <img src="img/teacher31.jpg" class="imgSize" alt="Placeholder image" />
+                                      </figure>
+                                      <p class="pt-4 is-size-5">Ц. Төртогтох</p>
+                                      <p class="">/Тэнхмийн эрхлэгч/</p>
+                                      <p class="is-size-6">turtogtokh@ider.edu.mn</p>
+                                      <div class="socials">
+                                        <a href="https://www.facebook.com/turuu3" target="__blank">
+                                          <i class="fab fa-facebook-square so"></i
+                                        ></a>
+                                        <a href="#"><i class="fab fa-instagram-square so"></i></a>
+                                        <a href="#"><i class="fab fa-twitter-square so"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="column is-10-desktop is-9-tablet mx-5">
+                                      <div class="info">
+                                        <div class="turshlaga">
+                                          <h1 class="is-size-4 py-3">Ажлын туршлага</h1>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Алтай Дээд
+                                            Сургууль"-д Багшаар ажилласан. (1999-2011)
+                                          </p>
+                        
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Алтай Дээд
+                                            Сургууль"-д Багшаар ажилласан. (1999-2011)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Дээд
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                        
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Дээд
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            "Идэр Их Сургууль"-д Тэнхмийн эрхлэгчээр ажилласан.
+                                            (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            "Идэр Их Сургууль"-д Тэнхмийн эрхлэгчээр ажилласан.
+                                            (2011-2021)
+                                          </p>
+                                        </div>
+                                        <div class="edu">
+                                          <h1 class="is-size-4 py-3">Боловсрол</h1>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Монгол Улсын Багшын Их Сургууль /МУБИС/. Бакалаврын зэрэг
+                                            (1999-2011)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Шинжлэх Ухаан Технологын Их Сургууль /ШУТИС/. Магистрын
+                                            зэрэг (2011-2021)
+                                          </p>
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                                  </div>
+                                  <div class="columns is-centered my-4 mb-6 pb-6 is-multiline blue box">
+                                    <div class="column is-10-desktop  is-5-tablet ">
+
+                                      <figure class="imag is-4by4">
+                                        <img src="img/teacher21.jpg" class="imgSize" alt="Placeholder image" />
+                                      </figure>
+                                      <p class="pt-4 is-size-5">Д. Мөнгөнцацрал</p>
+                                      <p class="">/Багш/</p>
+                                      <p class="is-size-6">munguntsatsral@ider.edu.mn</p>
+                                      <div class="socials">
+                                        <a
+                                          href="https://www.facebook.com/D.Munguntsatsral"
+                                          target="__blank"
+                                        >
+                                          <i class="fab fa-facebook-square so"></i
+                                        ></a>
+                                        <a href="#"><i class="fab fa-instagram-square so"></i></a>
+                                        <a href="#"><i class="fab fa-twitter-square so"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="column is-10-desktop is-9-tablet mx-5">
+                                      <div class="info">
+                                        <div class="turshlaga">
+                                          <h1 class="is-size-4 py-3">Ажлын туршлага</h1>
+                        
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Дээд
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Хувийн компань төслийн хариуцсан (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Хувийн компань төслийн хариуцсан (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Хувийн компань төслийн хариуцсан (2011-2021)
+                                          </p>
+                                        </div>
+                                        <div class="edu">
+                                          <h1 class="is-size-4 py-3">Боловсрол</h1>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Идэр Их Сургууль. Бакалаврын зэрэг (1999-2011)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Шинжлэх Ухаан Технологын Их Сургууль /ШУТИС/. Магистрын
+                                            зэрэг (2011-2021)
+                                          </p>
+                                        </div>
+                                      
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <div class="columns is-centered   is-multiline blue box">
+                                    <div class="column is-10-desktop  is-5-tablet ">
+                                      <figure class="imag is-4by4">
+                                        <img src="img/teacher11.jpg" class="imgSize" alt="Placeholder image" />
+                                      </figure>
+                                      <p class="pt-4 is-size-5">Н. Дэлгэржаргал</p>
+                                      <p class="">/Багш/</p>
+                                      <p class="is-size-6">delgerjargal@ider.edu.mn</p>
+                                      <div class="socials">
+                                        <a
+                                          href="https://www.facebook.com/nyamdalai.delgerjargal"
+                                          target="__blank"
+                                        >
+                                          <i class="fab fa-facebook-square so"></i
+                                        ></a>
+                                        <a href="#"><i class="fab fa-instagram-square so"></i></a>
+                                        <a href="#"><i class="fab fa-twitter-square so"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="column is-10-desktop is-9-tablet mx-5">
+                                      <div class="info">
+                                        <div class="turshlaga">
+                                          <h1 class="is-size-4 py-3">Ажлын туршлага</h1>
+                        
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Их
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Их
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>"Идэр Их
+                                            Сургууль"-д Багшаар ажилласан. (2011-2021)
+                                          </p>
+                                        </div>
+                                        <div class="edu">
+                                          <h1 class="is-size-4 py-3">Боловсрол</h1>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Их Засаг Их Сургууль. Бакалаврын зэрэг (1999-2011)
+                                          </p>
+                                          <p>
+                                            <i class="fas fa-angle-right px-3 fon"></i>
+                                            Идэр Их Сургууль. Магистрын зэрэг (2011-2021)
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            </section>
+                        
+                </div>  
+            </div>
+        </div>
+        
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

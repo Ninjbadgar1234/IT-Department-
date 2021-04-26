@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Emoji start -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src='inputEmoji.js'></script>
+    <script>
+      $(function () {
+        $('textarea').emoji({place: 'after'});
+      })
+    </script>
+    <!-- Emoji end -->
+    <script src="https://kit.fontawesome.com/743c4bf4e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/IT.png">
+    <title>Ider University :: IT Department</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="img"></div>
+
+            <nav id="nav" class="navbar is-transparent mb-5  height-nav sticky">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="img/IT.png" alt="Ider University Logo" style="max-height: 60px" class="px-5">
+                  </a>
+                  <div class="navbar-burger" id="burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="nav-links" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a href="index.html" class="navbar-item"> Нүүр </a>
+            
+                      <a href="about.html" class="navbar-item"> Тэнхмийн Тухай </a>
+            
+                      <a class="navbar-item">Бидний Зураг </a>
+                      <!-- <a class="navbar-item"> Клубууд </a> -->
+            
+                      <a href="news.html" class="navbar-item"> Мэдээ </a>
+                      <a class="navbar-item"> Event </a>
+                      <a href="teachers.html" class="navbar-item"> Багш, ажилчид </a>
+                    </div>
+                    <div class="navbar-end pr-3" >
+                      <div class="navbar-item">
+                        <div class="buttons">
+                          <a href="profile.html" class="button size-2 is-info" id="signup">
+                            <i class="fas fa-user-graduate px-2"></i>
+                            Профайл
+                          </a>
+                          <a class="button size-2 is-danger"  id="login"> <i class="fas fa-sign-out-alt pr-2"></i> Гарах </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class=" columns  mx-1 " >
+                <div class="column is-4 ">
+                  <div class="box is-warning back-white py-5 px-5 sticky2">
+                        <h1 class="title is-4">Мэдэгдэл</h1>
+                    <div class="item">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comments pr-2"></i> Мессежүүд</p>
+                        <p class="column is-2">(15)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-comment pr-2"></i> Нийтлэл</p>
+                        <p class="column is-2">(16)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-calendar-alt pr-2"></i> Үйл Явдалууд</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                      <hr class="navbar-divider">
+                      <a href="#" class="columns">
+                        <p class="column is-9"><i class="far fa-newspaper pr-2"></i> Мэдээ</p>
+                        <p class="column is-2">(2)</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer box my-5 sticky3 hide">
+                    <div class="content has-text-centered">
+                      <p>&copy; 2021  Идэр Их сургуулийн Мэдээллийн технологийн тэнхим</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-8 mr-3 ">
+                      <!-- pro & post -->
+                      <div class="box media px-4 py-4 back-white ">
+                        <div class="media-left ">
+                          <div class="proImg"></div>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-5">Ё. Нинжээ</p>
+                          <p class="subtitle is-6">@Оюутан</p>
+                        </div>
+                        <div class="media-right">
+                            <a  id="post" class="button is-info"><i class="fas fa-pen-fancy pr-2"></i> Нийтлэл бичих</a>
+                        </div>
+                      </div> 
+
+                      <!-- POST Modal -->
+                      <div class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content has-background-white py-5 px-5">
+                          <div class="field">
+                            <h1 class="title is-4 has-text-centered">Нийтлэл</h1>
+                            <form action="#">
+                              <div class="field">
+                                <textarea  id="p" class="writePost py-3 px-3" placeholder="Нийтлэл бичнэ үү"></textarea>Emoji
+                              </div>
+                              <div class="field">
+                                <label for=""> Хэрвээ та зураг оруулхыг хүсвэл доорх хэсэгт оруулна уу.</label>
+                                <div class="button" style="display: block;" onclick="document.getElementById('getPhoto').click()"><i class="far fa-images"></i> Зураг оруулах</div>
+                                <input type='file' id="getPhoto" accept="image/gif, image/jpeg, image/png" style="display: none;" onchange="readURL(this);" />
+                                <img id="blah" src="#"   alt="your image" />
+                              </div>
+                              <div class="field">
+                                <label for="#">Хэрвээ файл оруулхыг хүсвэл доорх хэсэгт ор уу.</label>
+                                <div class="button" style="display:block;" onclick="document.getElementById('inputfile').click()"><i class="fas fa-paperclip"></i> Файл оруулах</div>
+                                
+                                <input id='inputfile' type='file' name='inputfile' style="display: none;" onChange='getoutput()'><br>
+                                <p id="filePath" ></p>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <button type="submit" class="button is-info">Нийтлэх</button>
+                                </div>
+                              </div>
+                            </form>
+                            
+                          </div>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                      </div>
+                      <script>
+                        // Zuragni unshij haruulah heseg
+                        function readURL(input) {
+                          if (input.files && input.files[0]) {
+                              var reader = new FileReader();
+                  
+                              reader.onload = function (e) {
+                                  $('#blah')
+                                      .attr('src', e.target.result)
+                                      .width(150)
+                                      .height(200);
+                              };
+                  
+                              reader.readAsDataURL(input.files[0]);
+                          }
+                        }
+                        // File nemeh neriig salgaj awah
+                        function getFile(filePath) {
+                            return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
+                        }
+
+                        function getoutput() {
+                            document.getElementById('filePath').innerHTML = 'Файлын нэр = ' + getFile(inputfile.value)
+                        }
+                    </script>
+                      <!-- News Start -->
+                      <section id="posts" class="box section">
+                        <div class="container hid ">
+                          <a href="news.html"><h1 class="garchig has-text-centered py-4 is-4 title ">Мэдээ Мэдээлэл</h1></a>
+                          <!-- Start Carousel -->
+                          <div id="carousel-demo" class="carousel">
+                            <a href="post.html" class="colour">
+                            <div class="item-1 item">
+                              <!-- Slide Content -->
+                              <img src="./img/news1.jpg" alt="">
+                              <p class="title is-5"><i class="fas fa-globe-asia"></i> Оюутнууд цахим сургалтад сэтгэл ханамжтай байна гэж үнэлжээ</p>
+                              <p class="subtitle is-size-6">2020/2/12</p>
+                            </div>
+                          </a>
+                          <a href="post.html" class="colour ">
+                            <div class="item-1 item">
+                              <!-- Slide Content -->
+                              <img src="./img/news2.jpg" alt="">
+                              <p class="title is-5"><i class="fas fa-globe-asia"></i>  Өнөөдрөөс бүх оюутныг PCR шинжилгээнд хамруулна</p>
+                              <p class="subtitle is-size-6">2020/2/20</p>
+                            </div>
+                          </a>
+                          <a href="post.html" class="colour ">
+                            <div class="item-1 item">
+                              <!-- Slide Content -->
+                              <img src="./img/news3.jpg" alt="">
+                              <p class="title is-5"><i class="fas fa-globe-asia"></i> ХААИС-ийг Дархан-Уул аймаг руу нүүлгэхийг оюутнууд дэмжихгүй байна</p>
+                              <p class="subtitle is-size-6">2020/2/12</p>
+                            </div>
+                          </a>
+                          <a href="post.html" class="colour ">
+                            <div class="item-1 item">
+                              <!-- Slide Content -->
+                              <img src="./img/news4.jpg" alt="">
+                              <p class="title is-5"><i class="fas fa-globe-asia"></i>  "Оюутны 70 мянгаа авмаар байна"</p>
+                              <p class="subtitle is-size-6">2020/2/12</p>
+                            </div>
+                          </a>
+                          <a href="post.html" class="colour ">
+                            <div class="item-1 item">
+                              <!-- Slide Content -->
+                              <img src="./img/news2.jpg" alt="">
+                              <p class="title is-5"><i class="fas fa-globe-asia"></i> Оюутнууд цахим сургалтад сэтгэл ханамжтай байна гэж үнэлжээ</p>
+                              <p class="subtitle is-size-6">2020/2/12</p>
+                            </div>
+                          </a>
+                          </div>
+                          <!-- End Carousel -->
+                        </div>
+                      </section>
+                      <!-- news end -->
+                      <div class="box body-content back-white py-4 px-4 my-5">
+                        <div class="card author">
+                          <div class="card-content">
+                            <div class="media px-4 py-4 back-white ">
+                              <div class="media-left ">
+                                <div class="proSize proImg"></div>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-6">Ё. Нинжээ</p>
+                                <p class="subtitle is-7">@Оюутан</p>
+                                <p class="time">2ц</p>
+                              </div>
+                            </div>
+                          
+                            <div class="content text">
+                              Aylal vneheer saihan bailaa. Olon shine naiz nuhudtei bolloo.
+                            </div>
+                            <div class="newsImg card-image">
+                              <img src="./img/department.jpg" alt="">
+                            </div>
+                          </div>
+                          <footer class="card-footer">
+                            <a href="#" class="card-footer-item"><i class="far fa-heart px-2"></i><span>(4) </span></a>
+                            <a href="#" class="card-footer-item"><i class="far fa-comment px-2"></i>Comment <span>(5)</span></a>
+                          </footer>                          
+                        </div>
+                        </div>
+                      <div class="box body-content back-white py-4 px-4 my-5">
+                        <div class="card author">
+                          <div class="card-content">
+                            <div class="media px-4 py-4 back-white ">
+                              <div class="media-left ">
+                                <div class="proSize proImg"></div>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-5">Tsolmon Turtogtokh</p>
+                                <p class="subtitle is-7">@Тэнхмийн эрхлэгч</p>
+                                <p class="time">5ц</p>
+                              </div>
+                            </div>
+                          
+                            <div class="content text">
+                              14.30 minutand 104-d tenhimiin bvh oyutnuud belen baigaarai. Busadda heleerei.
+                            </div>
+                            <div class="newsImg card-image">
+                              <img src="#" alt="">
+                            </div>
+                          </div>
+                          <footer class="card-footer">
+                            <a href="#" class="card-footer-item"><i class="far fa-heart px-2"></i><span>(24) </span></a>
+                            <a href="#" class="card-footer-item"><i class="far fa-comment px-2"></i>Comment <span>(5)</span></a>
+                          </footer>                          
+                        </div>
+                        </div>
+                </div>  
+            </div>
+        </div>
+        
+    </section>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 3
+      });
+      </script>
+      <!-- <script>
+        $("#files").change(function() {
+          filename = this.files[0].name
+          console.log(filename);
+        });
+      </script> -->
+      <script src="js/script.js"></script>
+</body>
+</html>
